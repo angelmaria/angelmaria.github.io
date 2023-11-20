@@ -25,3 +25,73 @@ button {
     background-color: rgb(172, 28, 28);
     color: white;
 }
+/* importo el main.css de otro proyecto */
+body {
+    font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", Helvetica, Arial, sans-serif; 
+  }
+  
+  /* formating the table */
+table, th, td{
+    border:1px solid black;
+    text-align: center;
+}
+/* formating the form */
+.div_externo input {
+    width: 390px;
+}
+.multiple {
+    display: block;
+
+}
+form div {
+    padding: 5px;
+}
+
+form, input, textarea, select, button.pass{
+    font-size: 18px;
+    padding: 5px;
+    border-radius: 5px;
+    border-color: bisque;
+}
+::placeholder{
+    color: rgb(175, 174, 174);
+}
+form label {
+    margin-right: 10px;
+    text-align: right;
+}
+.div_externo label {
+    float:left;
+    min-width:170px;
+}
+form button.gradient-border {
+    padding:10px;
+    margin:15px 5px 5px 5px;
+    font-size: 1.5em;
+    width: 150px;
+    /* box-shadow:2px 2px 6px black; */ 
+    font-weight: 700;
+    text-shadow: 1px 1px 1px black;
+    color:rgb(160, 160, 160);
+    font-family: 'Oswald', Verdana, Geneva, Tahoma, sans-serif;
+    letter-spacing: 1px;
+}
+/* formating the button mostrar password */
+button.pass {
+    background-color: rgb(246, 246, 246);
+    color: rgb(206, 132, 76);
+}
+/* formating the navigation pane */
+/* nav ul li {
+    display: inline-block;
+    padding: 10px;
+    border: 1px solid rgb(180, 180, 180);
+    border-radius: 10px;
+    color: rgb(55, 36, 0);
+    text-decoration: none;
+    font-weight: 800;
+} */
+/* para eliminar raya de los links del navegador */
+/* nav ul a{
+    text-decoration: none;
+} */

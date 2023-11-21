@@ -103,6 +103,12 @@ a{
 a:hover {
     color: greenyellow;
 }
+/* #toilet {
+    transition: .9s;
+}
+#toilet:hover{
+    display: contents;
+} */
 /* formating the nav */
 .dropdown {
     position: relative;
@@ -124,4 +130,60 @@ a:hover {
     opacity: 1;
     transform: translateY(0);
     pointer-events: auto;
+}
+
+/* estilizando el buton prueba */
+.prueba2-drop {
+    position: absolute;
+    opacity:0;
+    transform: translateY(-30px);
+    transition: opacity 150ms ease-in-out, transform 150ms ease-in-out;
+    pointer-events: none;
+}
+.prueba2 > .link:focus + .prueba2-drop{
+    opacity:1;
+    transform: translateY(0);
+    pointer-events:auto;
+}
+
+/* estilizando parrafo2 */
+.parrafo2 {
+    width:900px;
+    background-color: antiquewhite;
+    padding: 15px;
+    margin: 5px;
+    transition: 1s;
+}
+.parrafo2:hover {
+    background-color:rgb(138, 82, 14);
+    color: white;
+    width:500px;
+
+}
+/* estilizando parrafo1 */
+.par1, .par2, .par3 {
+    padding: 10px;
+    background-color:beige;
+    border-radius: 10px; 
+    margin: 10px;
+}
+.par1 {
+    perspective: 1000px;
+    transition: transform 1s;
+}
+.par1:hover {
+    transform: rotateY(180deg);
+}
+.par2 {
+    perspective: 1000px;
+    transition: transform 1s;
+}
+.par2:hover{
+    transform:scale(1.9)
+}
+.par3 {
+    transition: transform 1s;
+}
+.par3:hover{
+    transform: skew(20deg);
 }

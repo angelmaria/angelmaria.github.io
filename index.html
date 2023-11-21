@@ -4,27 +4,50 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Curso Fundamentos HTML, CSS y JavaScript</title>
 </head>
 <header>
     <nav>
         <ul>
-            <li><a href="index.html">Home</a></li>
+            <div class="dropdown" style="display: contents;">
+                <button class="link" data-dropdown-button>Home</button>
+                <div class="dropdown-menu">
+                    Contenido del home
+                </div>
+            </div>
             <li><a href="formularios.html">Formulario</a></li>
             <li><a href="css.html">CSS</a></li>
             <li><a href="acerca.html">Acerca</a></li>
             <li><a href="contacto.html">Contacto</a></li>
+            <li class="last">Login</li>
         </ul>
     </nav>
 </header>
 <body>
     <h1 class="part1">Curso Adecco Fundamentos HTML, CSS y JavaScript</h1>
-    <p>Incididunt eiusmod adipisicing excepteur duis et adipisicing ea cillum in ipsum sunt qui labore ipsum. Velit eu fugiat deserunt id. Nulla incididunt proident pariatur velit ut culpa ex sit exercitation. Aliqua dolore quis est cupidatat aute adipisicing irure qui commodo cillum nisi mollit do sunt. Culpa commodo laborum cillum occaecat incididunt est velit sint sint esse laboris excepteur. Nulla fugiat tempor elit nisi esse esse laborum esse duis Lorem. Ullamco duis ad irure aliquip enim incididunt.</p>
-    <a id="enlace1" href="/enlace1">Enlace 1</a>
+    <p style="font-family: 'Montserrat', sans-serif;">Incididunt eiusmod adipisicing excepteur duis et adipisicing ea cillum in ipsum sunt qui labore ipsum. Velit eu fugiat deserunt id. Nulla incididunt proident pariatur velit ut culpa ex sit exercitation. Aliqua dolore quis est cupidatat aute adipisicing irure qui commodo cillum nisi mollit do sunt. Culpa commodo laborum cillum occaecat incididunt est velit sint sint esse laboris excepteur. Nulla fugiat tempor elit nisi esse esse laborum esse duis Lorem. Ullamco duis ad irure aliquip enim incididunt.</p>
+    <p>Lorem mollit aute est et ea dolore ipsum esse exercitation nulla esse adipisicing pariatur Lorem. Occaecat occaecat laborum nulla aute cillum esse sunt. Qui eu culpa voluptate est nulla culpa sunt commodo sunt ipsum.</p>
+    <a id="enlace1" href="/enlace1" class="animate__animated animate__bounce">Enlace 1</a>
     <a id="enlace2" href="/enlace2">Enlace 2</a>
     <button class="btn-success">Boton 1</button>
     <button class="btn-danger">Boton 2</button>
     <button class="btn-success">Boton 3</button>
     <button class="btn-danger">Boton 4</button>
+    <p>
+        <button>
+            <i class="fa-solid fa-user"></i>
+            Agregar Usuario
+        </button>
+    </p>
+    <button>
+        <i class="fa-solid fa-poo"></i>
+    </button>
+    Ir a un bano
 </body>
+<link rel="stylesheet" href="main.js">
 </html>

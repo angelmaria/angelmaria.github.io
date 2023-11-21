@@ -83,6 +83,45 @@ button.pass {
 }
 /* formating the h1 with part1 class */
 .part1 {
-    text-shadow: 1px 1px 2px black;
-    color:
+    text-shadow: 1px 1px 5px black;
+    color:aliceblue;
+    transition: 1s;
+}
+.part1:hover{
+    opacity: .6;
+}
+li.last {
+    text-align: right;
+    color: red;
+}
+a{
+    text-decoration:none;
+    font-style: normal;
+    transition: 2s;
+    font-size: 1.2em;
+}
+a:hover {
+    color: greenyellow;
+}
+/* formating the nav */
+.dropdown {
+    position: relative;
+}
+
+.dropdown-menu {
+    position: absolute;
+    /* top: calc(100% + .25rem); */
+    background-color: white;
+    padding: 0.75rem;
+    border-radius: .25rem;
+    box-shadow: 0 2px 5px 2px rgba(0, 0, 0, .2); 
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: opacity 150ms ease-in-out, transform 150ms ease-in-out;
+    pointer-events: none;
+}
+.dropdown > .link:focus + .dropdown-menu {
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
 }

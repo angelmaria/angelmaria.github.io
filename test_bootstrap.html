@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Bootstrap</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <style>
+    .producto2:hover{transform:scale(1.1)}
+    .bg-welcome{
+        background-image:url('https://placehold.co/2000');
+        padding:100px;
+        background-size:cover;
+        background-position:center;
+    }
+    </style>
+</head>
+<body>
+
+    <video autoplay loop muted src="https://assets.codepen.io/6093409/river.mp4" type="video/mp4">
+        <div class="bg-welcome text-center">
+            <h1>✨Welcome to Black friday! &#128516 &hearts;</h1>
+            <p>Best offers in Internet</p>
+        </div>
+    </video>
+    <!-- <video id="background-video" autoplay loop muted poster="https://assets.codepen.io/6093409/river.jpg"><source src="https://assets.codepen.io/6093409/river.mp4" type="video/mp4"></video> -->
+
+    <div class="container mt-5">
+<!-- los emojis estan copiados de la web https://emojicopy.com/ -->
+        <!-- <div class="bg-welcome">
+            
+        </div> -->
+        <div class="row mt-5">
+            <div class="col text-center m-2 p-2 shadow-sm">
+                <h3>Producto 1</h3>
+                <img src="https://placehold.co/300" class="img-fluid shadow-sm" alt="imagen del producto 1">
+                <p class="p-2">Eiusmod irure amet officia Lorem nulla laboris excepteur officia laboris proident. Non deserunt nulla laboris sint anim in nulla enim amet laborum qui nulla adipisicing. Ipsum eu voluptate et pariatur aute nisi est commodo reprehenderit ullamco aliquip est magna sit.</p>
+                <button type="button" class="btn btn-primary">Compra</button>
+            </div>
+            <div style="perspective: 1000px; transition: transform 1s; cursor:pointer;" class="producto2 col text-center m-2 p-2 shadow">
+                <h3 style="white-space:nowrap; text-overflow:ellipsis; overflow: hidden; width: 300px">Producto Destacado con titulo muy largo</h3>
+                <img src="https://placehold.co/300" class="img-fluid" alt="imagen del producto 1">
+                <p class="p-2">Eiusmod irure amet officia Lorem nulla laboris excepteur officia laboris proident. Non deserunt nulla laboris sint anim in nulla enim amet laborum qui nulla adipisicing. Ipsum eu voluptate et pariatur aute nisi est commodo reprehenderit ullamco aliquip est magna sit.</p>
+                <button type="button" class="btn btn-primary">Compra</button>
+            </div>
+            <div class="col text-center m-2 p-2 shadow-sm">
+                <h3>Producto 1</h3>
+                <img src="https://placehold.co/300" class="img-fluid" alt="imagen del producto 1">
+                <p class="p-2">Eiusmod irure amet officia Lorem nulla laboris excepteur officia laboris proident. Non deserunt nulla laboris sint anim in nulla enim amet laborum qui nulla adipisicing. Ipsum eu voluptate et pariatur aute nisi est commodo reprehenderit ullamco aliquip est magna sit.</p>
+                <button type="button" class="btn btn-primary">Compra</button>
+            </div>
+        </div> <!-- primer row -->
+    </div>
+    
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous">
+</script>
+</body>
+</html>

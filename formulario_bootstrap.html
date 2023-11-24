@@ -14,6 +14,12 @@
         .form-control {
             color: rgb(140, 140, 140);
         }
+        i.fa-brands{
+            transition: transform 1s;
+        }
+        i.fa-brands:hover {
+            transform: scale(1.5)
+        }
     </style>
 </head>
 <!-- Navigation pane -->
@@ -195,16 +201,14 @@
     </script>
     <script>
         function toggleTheme(){
-        // let html = document.getElementsByTagName('html')[0];
-        let html = document.documentElement;
-        if (html.getAttribute('data-bs-theme') === 'dark') {
-        html.setAttribute('data-bs-theme', 'light');
-        } else {
-        html.setAttribute('data-bs-theme', 'dark');
-        }
+            //let html = document.getElementsByTagName('html')[0];
+            let html = document.documentElement;
+            if (html.getAttribute('data-bs-theme') === 'dark') {
+                html.setAttribute('data-bs-theme', 'light');
+                } else {
+                html.setAttribute('data-bs-theme', 'dark');
+            }
         }
         </script>
-
- 
 </body>
 </html>

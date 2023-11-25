@@ -20,6 +20,11 @@
         i.fa-brands:hover {
             transform: scale(1.5)
         }
+        nav.navbar {
+            position: fixed; 
+            width: 100%; 
+            top:0;
+        }
     </style>
 </head>
 <!-- Navigation pane -->
@@ -60,7 +65,7 @@
 <!-- end of navigation pane -->
 <body>
     <!-- titulo -->
-    <div class="container mt-5">
+    <div class="container" style="margin-top: 6rem !important">
         <h1 style="color: rgb(238, 237, 237); text-shadow: 0px 1px 2px black;">Formulario Bootstrap</h1>
     </div>
     <!-- Formulario -->
@@ -111,7 +116,7 @@
                     <label class="form-label" for="height">Altura (cm)</label>
                     <input class="form-control" type="number" name="height" id="height" step="any" min="50" max="240">
                 </div>
-                <div class="col-md-4 form-floating pt-5" style="margin-top:-16px">
+                <div class="col-md-4 form-floating pt-5" style="margin-top:-16px;">
                     <label class="form-label" for="bio">Biografía</label>
                     <textarea class="form-control" id="bio" name="bio" rows="10" cols="50" minlength="10" maxlength="100"></textarea>
                 </div>
